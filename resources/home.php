@@ -16,7 +16,7 @@
               <!--Tombol Edit-->
               <button class="w-full h-auto px-6 my-1 text-lg text-gray-100 transition-colors duration-150 bg-gray-700 rounded-lg focus:shadow-outline hover:bg-gray-800"><a href="?page=editmovie&id=<?= $value['id'] ?>">Edit</a></button>
               <!--Tombol Delete-->
-              <button class="w-full h-auto px-6 my-1 text-lg text-red-100 transition-colors duration-150 bg-red-700 rounded-lg focus:shadow-outline hover:bg-red-800"><a href="?page=delete">Delete</a></button>
+              <button class="w-full h-auto px-6 my-1 text-lg text-red-100 transition-colors duration-150 bg-red-700 rounded-lg focus:shadow-outline hover:bg-red-800"><a href="delete.php?id=<?= $value['id'] ?>">Delete</a></button>
             </div>
           </div>
           <?php } ?>

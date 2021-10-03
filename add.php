@@ -3,14 +3,11 @@ require "app/controller/CreateController.php";
 use App\Controller\CreateController;
 
 $add = new CreateController();
-if($_POST['type'] == 'add') {
     $data = array(
-        // 'nama' => $_POST['nama'],
-        'nama' => $_POST['nama'],
-        'email' => $_POST['email'],
-        'hp' => $_POST['phone'],
+        'title' => $_POST['title'],
+        'year' => $_POST['year'],
+        'genre' => $_POST['genre'],
     );
-    $add->create('peserta', $data);
-    header('location:index.php');
-}
+    $add->create('movies', $data);
+    header('location:index.php?page=home');
 ?>
